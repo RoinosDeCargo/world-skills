@@ -1,0 +1,163 @@
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  background-color: black;
+}
+
+h1 {
+  color: azure;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+
+  font-size: 25px;
+}
+h2 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h3 {
+  margin-left: 40px;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-indent: 10px;
+  color: white;
+  width: 100%;
+}
+.proj-descr {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  max-width: 60%;
+  margin-right: 30px;
+}
+.header {
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 3px solid rgb(183, 182, 182);
+  border-top: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(33, 33, 118);
+}
+.title-logo {
+  color: azure;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.navbar-buttons {
+  margin-left: auto;
+}
+.list-obj {
+  border-bottom: 2px solid rgb(110, 110, 110);
+  margin: 4px;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  color: rgb(43, 43, 249);
+  font-style: italic;
+}
+.navbar-obj {
+  color: black;
+  border: 1px solid white;
+  color: rgb(23, 23, 70);
+  background-color: gray;
+  padding: 3px;
+  list-style: none;
+  position: relative;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.navbar-obj:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border: 1px solid white;
+  color: rgb(23, 23, 70);
+  background-color: rgb(206, 205, 205);
+  padding: 3px;
+  list-style: none;
+  position: absolute;
+  margin-top: 20px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-body {
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+.navbar-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.publish-btn {
+  width: 70px;
+  height: 30px;
+  background-color: gray;
+}
+
+.publish-btn:hover {
+  width: 80px;
+  height: 35px;
+  color: blue;
+}
+.view-btn {
+  width: 70px;
+  height: 30px;
+  background-color: gray;
+}
+.view-btn:hover {
+  width: 80px;
+  height: 35px;
+  color: blue;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding-left: 10px;
+  }
+  .navbar-obj {
+    padding: 1px;
+  }
+  .title-logo {
+    font-size: 20px;
+    margin: 0;
+  }
+  .main-body {
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+  .proj-descr {
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    max-width: 90%;
+    margin-right: 10px;
+  }
+  body {
+    justify-content: baseline;
+  }
+}
